@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer navbar{
+    .bw-text{
+        @apply bg-Cwhite text-Cblack dark:bg-Cblack dark:text-Cwhite
+    }
+    
+    .selected{
+        @apply bg-Clightmain text-Cdarkmain dark:text-Clightmain dark:bg-Cdarkmain rounded-full
+    }
+    .link-container>*{
+        @apply px-5 py-1
+    }
+    
+}

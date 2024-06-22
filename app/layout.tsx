@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
 import "./globals.css";
+//Fonts
+import { Josefin_Sans, Playfair_Display } from "next/font/google";
 // Components
 import Navbar from "./components/partials/navbar";
 
-const noto = Noto_Sans({ subsets: ["latin"] });
+const josefin_Sans = Josefin_Sans({
+   subsets: ["latin"],
+   variable: '--font-josefin-sans' 
+
+});
+const playfair_display = Playfair_Display({ 
+  subsets: ["latin"],
+  variable:'--font-playfair-display'
+});
 
 export const metadata: Metadata = {
   title: "Henry Morris - Portfolio",
@@ -18,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={noto.className}>
+      <body className={`${playfair_display.variable} ${josefin_Sans.variable}`}>
         <Navbar />
         {children}
       </body>

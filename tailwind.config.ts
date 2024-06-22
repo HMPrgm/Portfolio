@@ -9,11 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        dark: '#212A31',
-        light: '#D3D9D4',
-        medium: '#2E3944',
-        blue: '#124E66',
-        light_blue: '#748D92',
+        Cblack: '#2F3E46',
+        Cwhite: '#CAD2C5',
+        Cmain: '#52796F',
+        Clightmain:'#84A98C',
+        Cdarkmain:'#354F52'
+      },
+      fontFamily: {
+        josefinSans: ['var(--font-josefin-sans)'],
+        playfairDisplay:['var(--font-playfair-display)']
       }
     },
   },
