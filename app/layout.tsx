@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair_display.variable} ${josefin_Sans.variable}`}>
+      <body className={`${playfair_display.variable} ${josefin_Sans.variable} font-josefinSans`}>
         <Navbar />
         {children}
       </body>

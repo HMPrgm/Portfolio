@@ -15,7 +15,7 @@
     }
 }
 @layer projects {
-    .project_title{
-        @apply font-playfairDisplay text-2xl
+    .project-title{
+        @apply font-playfairDisplay py-10
     }
 }
