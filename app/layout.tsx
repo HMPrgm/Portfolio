@@ -4,6 +4,7 @@ import "./globals.css";
 import { Josefin_Sans, Playfair_Display } from "next/font/google";
 // Components
 import Navbar from "./components/partials/navbar";
+import Footer from "./components/partials/footer";
 
 const josefin_Sans = Josefin_Sans({
    subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${playfair_display.variable} ${josefin_Sans.variable} font-josefinSans`}>
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
