@@ -1,0 +1,12 @@
+{
+    "About":[
+        {
+            "title":"I'm studying Computer Science at the University of Virginia",
+            "text":"Studying CS through UVA Engineering along with a Math major. Aside from those, my other interests include: history, language learning (German currently), reading, and exercising!"
+        },
+        {
+            "title":"I'm a Full-Stack Web Developer",
+            "text":"Working in teams or alone, I'm passionate about all things web. The technology I'm most interested in at the moment is Next.js. The combination of creativity and problem solving drives my excitement for web dev."
+        }
+    ]
+}
