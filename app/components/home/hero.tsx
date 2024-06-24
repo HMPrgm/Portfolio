@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="items-center text-center bw-text font-playfairDisplay flex flex-col gap-12 min-h-screen justify-center">
-      <h2 className="text-8xl font-bold">
+    <section id="home" className="items-center text-center bw-text font-playfairDisplay flex flex-col gap-12 min-h-screen justify-center ">
+      <h2 className="text-8xl font-bold typewriter">
         Hi, I'm Henry
       </h2>
       <h3 className="text-4xl">

@@ -10,7 +10,7 @@ export default function Contact() {
     }>({ name: "", email: "", message: "" });
 
     return (
-        <div className="bg-Cwhite py-10 text-Cblack">
+        <div  id="contact"  className="bg-Cwhite py-10 text-Cblack">
             <div className="container mx-auto items-center text-center ">
                 <div className="container items-center mx-auto max-w-96 [&>*]:py-4">
                     <h2 className="font-playfairDisplay text-5xl  text-Cblack">Let's Talk!</h2>

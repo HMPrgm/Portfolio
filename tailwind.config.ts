@@ -8,12 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
       colors: {
-        Cblack: '#2F3E46',
-        Cwhite: '#CAD2C5',
+        Cblack: '#131920',
+        Cwhite: '#E5EBE0',
         Cmain: '#52796F',
-        Clightmain:'#84A98C',
-        Cdarkmain:'#354F52'
+        Clightmain:'#CAD2C5',
+        Cdarkmain:'#2F3E46'
       },
       fontFamily: {
         josefinSans: ['var(--font-josefin-sans)'],

@@ -21,7 +21,7 @@ export default function About_section({ title, text, left}: {title:string, text:
           <p>{text}</p>
         </div>
       </div>
-      <hr className="h-0.25 bg-Cwhite"/>
+      <hr className="h-0.25 border-Cdarkmain"/>
     </div>
   )
 }
