@@ -22,7 +22,7 @@
 @layer navbar{
 
     .selected{
-        @apply bg-Cwhite rounded-full drop-shadow-none !important
+        @apply bg-Cwhite rounded-full drop-shadow-none
     }
     .nav-links>*{
         @apply px-5 py-1
