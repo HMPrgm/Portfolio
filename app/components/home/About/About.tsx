@@ -1,3 +1,4 @@
+import Reveal from "../../partials/effects/revealonscroll";
 import About_section from "./About_section";
 
 interface Section{
@@ -26,7 +27,11 @@ export default function About() {
 
   return (
     <section id="about" className="bw-text flex flex-col justify-center text-center py-10">
-        <h2 className="font-playfairDisplay text-5xl pb-10">Who Am I?</h2>
+
+        <Reveal>
+          <h2 className="font-playfairDisplay text-5xl pb-10">Who Am I?</h2>
+        </Reveal>
+
         {sections.map(s=> <About_section title={s.title} text={s.text} left={s.left} photo={s.photo}></About_section>)}
     </section>
   )
