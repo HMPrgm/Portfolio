@@ -5,13 +5,15 @@ import { DotObj, MousePos } from "./dotObj";
 
 export default function Dots() {
 
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const mousePositionRef = useRef({ x: 0, y: 0 });
   const handleMouseMove = (event: MouseEvent) => {
-    console.log(mousePosition)
-    setMousePosition({
-      x: event.clientX,
-      y: event.clientY,
-    });
+    // console.log(mousePosition)
+    const newMousePosition = {
+      x: event.clientX * 2,
+      y: event.clientY * 2,
+    };
+    // console.log("Pos: "+newMousePosition.x + ", " + newMousePosition.y)
+    mousePositionRef.current = newMousePosition;
   };
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -40,7 +42,7 @@ export default function Dots() {
       const context = canvas.getContext('2d');
       if (!context) return;
       dotObjs.forEach(dotObj => {
-        NewDot(canvas.width, canvas.height,context, dotObj,mousePosition);
+        NewDot(canvas.width, canvas.height,context, dotObj,mousePositionRef.current);
       });
 
       requestAnimationFrame(render)

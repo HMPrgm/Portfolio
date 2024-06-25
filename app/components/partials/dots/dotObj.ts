@@ -3,7 +3,7 @@ export interface DotObj{
     y:number,
     vx:number,
     vy:number,
-    radius:number
+    radius:number,
   }
 
   export interface MousePos{
