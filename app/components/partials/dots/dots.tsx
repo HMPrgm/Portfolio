@@ -1,9 +1,18 @@
 'use client'
 import { useEffect, useRef, useState } from "react"
 import { NewDot } from "./dot"
-import { DotObj } from "./dotObj";
+import { DotObj, MousePos } from "./dotObj";
 
 export default function Dots() {
+
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (event: MouseEvent) => {
+    console.log(mousePosition)
+    setMousePosition({
+      x: event.clientX,
+      y: event.clientY,
+    });
+  };
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -30,14 +39,17 @@ export default function Dots() {
 
       const context = canvas.getContext('2d');
       if (!context) return;
-      console.log(dotObjs)
       dotObjs.forEach(dotObj => {
-        NewDot(canvas.width, canvas.height,context, dotObj);
+        NewDot(canvas.width, canvas.height,context, dotObj,mousePosition);
       });
 
       requestAnimationFrame(render)
     }
     render();
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
   }, [])
   return (
     <div className="absolute -z-10">
