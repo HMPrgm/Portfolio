@@ -27,7 +27,7 @@ export default function Navbar() {
         const currentSection = sectionElements.find(section => {
             if (section) {
                 const rect = section.getBoundingClientRect();
-                console.log(rect.top, rect.bottom)
+                // console.log(rect.top, rect.bottom)
                 return rect.top <= 0 && rect.bottom > 0;
             }
             return false;
