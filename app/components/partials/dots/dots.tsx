@@ -1,37 +1,47 @@
 'use client'
-import { useEffect, useState } from "react"
-import { randomInt } from "crypto"
+import { useEffect, useRef, useState } from "react"
+import { NewDot } from "./dot"
+import { DotObj } from "./dotObj";
 
-export default function dots({seed}:{seed:number}) {
+export default function Dots() {
 
-  const [position, setPosition] = useState({
-    x: 0,
-    y:0
-  })
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-  
-
-  function handleMotion() {
-    // console.log(Date.now())
-    setPosition((pPos) => ({
-      x: ((Date.now())/10 *Math.cos(seed))%window.innerWidth,
-      y: ((Date.now())/10 *Math.sin(seed))%window.innerHeight
-    }
-    ))
-  }
+  const dotObjs: DotObj[] = []
 
   useEffect(() => {
-    handleMotion()
-    // window.addEventListener('scroll', handleMotion);
-    // return () => {
-    //     window.removeEventListener('scroll', handleMotion);
-    // };
-});//, []
+    for (let i: number = 0; i < 100; i++) {
+      dotObjs.push({
+        x: Math.random() * window.innerWidth * 2,
+        y: Math.random() * window.innerHeight * 2,
+        vx: Math.random() * 2 - 1,
+        vy: Math.random() * 2 - 1,
+        radius: 7
+      })
+    }
+    const render = () => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
 
+      canvas.width = window.innerWidth * 2;
+      canvas.height = window.innerHeight * 2;
+      canvas.style.width = `${window.innerWidth}px`;
+      canvas.style.height = `${window.innerHeight}px`;
+
+      const context = canvas.getContext('2d');
+      if (!context) return;
+      console.log(dotObjs)
+      dotObjs.forEach(dotObj => {
+        NewDot(canvas.width, canvas.height,context, dotObj);
+      });
+
+      requestAnimationFrame(render)
+    }
+    render();
+  }, [])
   return (
-    <div className={`w-2 h-2 bg-Cmain rounded-full absolute  left-0 top-0 -z-10`}
-      style={{ transform: `translate(${position.x}px, ${position.y}px)`}}></div>
-
-  )
-  // transform translate-x-[${position.x}px] translate-y-[${position.y}px]
+    <div className="absolute -z-10">
+      <canvas ref={canvasRef} width={800} height={600} className="border border-gray-300"></canvas>
+    </div>
+  );
 }

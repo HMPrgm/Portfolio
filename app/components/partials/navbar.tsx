@@ -50,7 +50,7 @@ export default function Navbar() {
         <nav className="container items-center flex mx-auto justify-center">
             <div className={`flex justify-center fixed py-3 px-4 rounded-full nav-links font-bold gap-8 text-lg bw-text bg-white  duration-500 ease-out ${isScrolled ? 'bg-opacity-75 mt-24 gap-6' : 'bg-opacity-0 mt-32 gap-8'} drop-shadow-sm `}>
                 
-                {sections.map(section => <Link href={section.href} className={`transition-all selected ${activeSection === section.id ? 'bg-opacity-100' : 'bg-opacity-0'}`} >{section.name}</Link>)} 
+                {sections.map(section => <Link href={section.href} key={section.id} className={`transition-all selected ${activeSection === section.id ? 'bg-opacity-100' : 'bg-opacity-0'}`} >{section.name}</Link>)} 
             </div>
         </nav>
     )
