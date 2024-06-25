@@ -33,6 +33,6 @@
 }
 @layer projects {
     .project-title{
-        @apply font-playfairDisplay py-10
+        @apply font-playfairDisplay py-10 text-Cdarkmain
     }
 }
