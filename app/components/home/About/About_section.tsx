@@ -21,7 +21,9 @@ export default function AboutSection({ children, title, text, left }: {children:
           </div>
         </Reveal>
       </div>
-      <hr className="h-0.25 border-Cdarkmain" />
+      <Reveal>
+        <hr className="h-0.25 border-Cdarkmain dark:border-Clightmain" />
+      </Reveal>
     </div>
   )
 }
