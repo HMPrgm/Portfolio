@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next";
 import "./globals.css";
 //Fonts
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${playfair_display.variable} ${josefin_Sans.variable} font-josefinSans`}>
         
         {children}
+        <SpeedInsights/>
         <Footer/>
       </body>
     </html>
