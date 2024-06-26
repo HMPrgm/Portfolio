@@ -1,14 +1,10 @@
 import Reveal from "../../partials/effects/revealonscroll";
 
-export default function About_section({ children, title, text, left, photos }: {children: React.ReactNode, title: string, text: string, left: boolean, photos: string[] }) {
+export default function AboutSection({ children, title, text, left }: {children: React.ReactNode, title: string, text: string, left: boolean}) {
 
   // const title:string = "I’m studying Computer Science at the University of Virginia";
   // const text:string = "Studying CS through UVA Engineering along with a Math major. Aside from those, my other interests include: history, language learning (German currently), reading, and exercising!"
   // const left:boolean = false;
-
-  function images() {
-    return photos.map(photo => { <img src="photo" alt="Tech Photo"></img> })
-  }
 
   return (
     <div className="py-10 container mx-auto lg:w-[70rem] sm:w-[50rem] flex flex-col gap-16">
