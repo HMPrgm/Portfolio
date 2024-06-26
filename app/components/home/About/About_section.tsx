@@ -7,7 +7,7 @@ export default function AboutSection({ children, title, text, left }: {children:
   // const left:boolean = false;
 
   return (
-    <div className="px-6  md:px-2 lg:px-0 py-10 container mx-auto lg:w-[70rem] sm:w-[50rem] flex flex-col gap-16">
+    <div className="px-6  md:px-4 lg:px-2 xl:px-0 py-10 container mx-auto lg:w-[70rem] sm:w-[50rem] flex flex-col gap-16">
       <div className="grid sm:grid-cols-2 gap-10 items-center">
         <Reveal translate="-translate-x-20" className={`order-last ${left ? "" : "sm:order-first"} flex justify-center`}>
           

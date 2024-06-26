@@ -5,7 +5,7 @@ import { DotObj, MousePos } from "./dotObj";
 
 export default function Dots() {
 
-  const dotsPer10000Pixels = 1.2;
+  const dotsPer10000Pixels = 1.5;
 
   const mousePositionRef = useRef({ x: 0, y: 0 });
   const [resize,setResize] = useState(false)
