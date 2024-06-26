@@ -7,13 +7,13 @@ export default function About() {
   const sections: any = {
     personal: {
       title: "I'm studying Computer Science at the University of Virginia",
-      text: "Studying CS through UVA Engineering along with a Math major. Aside from those, my other interests include: history, language learning (German currently), reading, and exercising!",
+      text: "I'm studying CS through UVA Engineering along with a Math major. Aside from those, my other interests include: history, language learning (German currently), reading, and exercising!",
       left: false,
       photo: 'Photo_Cropped.png'
     },
     webdev: {
       title: "I'm a Full-Stack Web Developer",
-      text: "Working in teams or alone, I'm passionate about all things web. The combination of creativity and problem solving is what peaks my interest. The frontend technology I'm most interested in at the moment is Next.js, and on the backend I'm working on learning ASP.NET.",
+      text: "Working in teams or alone, I'm passionate about all things web. The combination of creativity and problem-solving is what peaks my interest. The frontend technology I'm most interested in is Next.js, and on the backend, I'm working on learning ASP.NET.",
       left: true,
       techs:
         [
@@ -65,7 +65,7 @@ export default function About() {
     },
     other: {
       title: "Additional Techs I've Used",
-      text: "I've used a lot of different technologies throughout my CS career. I started in 2019 making games with Unity and C#, afterwards learning Python and Java. I've learned a lot of .NET and have recently been delving into Deep Learning. Of course this list is incomplete as my drive to learn only increases.",
+      text: "I've used a lot of different technologies throughout my CS career. I started in 2019 developing games with Unity and C#, afterward learning Python and Java. I've learned a lot of .NET and have recently been delving into Deep Learning. Of course, this list is incomplete as my drive to learn only increases.",
       left: false,
       techs:
         [
@@ -97,7 +97,7 @@ export default function About() {
     },
     design: {
       title: "I'm an Audio and Video Editor",
-      text: "I'm currently editing for two podcasts: <a href='https://open.spotify.com/show/0OtkSXW04TEbGX3lwUEQcH?si=d884835e44414dd6' target='_blank'>The Hidden Curriculum</a> and <a href='https://open.spotify.com/show/4ZiJcyjqtUC9G09zIqdcVY?si=6346d934a38d4073 target='_blank'>Coup de'Pod</a>. I've been using professional video editing software since 2020. I'm at an intermediate level with Premire Pro and Davinci Resolve, and am a beginner in After Effects. I have skills with design software, being at an intermediate level with Photoshop and Illustrator and at a beginner level with Figma.",
+      text: "I'm an editor for two podcasts: <a href='https://open.spotify.com/show/0OtkSXW04TEbGX3lwUEQcH?si=d884835e44414dd6' target='_blank'>The Hidden Curriculum</a> and <a href='https://open.spotify.com/show/4ZiJcyjqtUC9G09zIqdcVY?si=6346d934a38d4073 target='_blank'>Coup de'Pod</a>. I've been using professional video editing software since 2020. I'm at an intermediate level with Premiere Pro and Davinci Resolve and am a beginner in After Effects. I have skills with design software, being at an intermediate level with Photoshop and Illustrator and a beginner with Figma.",
       left: true,
       techs:
         [
