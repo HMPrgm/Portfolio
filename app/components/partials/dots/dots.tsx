@@ -10,8 +10,10 @@ export default function Dots() {
     // console.log(mousePosition)
     const newMousePosition = {
       x: event.clientX * 2,
-      y: event.clientY * 2,
+      y: (event.clientY  + scrollY)* 2,
     };
+    console.log(`Old: (${ event.clientX*2}, ${ event.clientY*2})`)
+    console.log(`New: (${ newMousePosition.x}, ${newMousePosition.y})`)
     // console.log("Pos: "+newMousePosition.x + ", " + newMousePosition.y)
     mousePositionRef.current = newMousePosition;
   };

@@ -40,7 +40,7 @@ export default function Projects() {
       </Reveal>
       {finishedProjects.map(proj =>
         <Reveal>
-          <ProjectPreview title={proj.title} desc={proj.desc} link={proj.link}></ProjectPreview>
+          <ProjectPreview key={proj.title} title={proj.title} desc={proj.desc} link={proj.link}></ProjectPreview>
         </Reveal>
       )}
       <Reveal>
@@ -48,7 +48,7 @@ export default function Projects() {
       </Reveal>
       {currentProjects.map(proj =>
         <Reveal>
-          <ProjectPreview title={proj.title} desc={proj.desc} link={proj.link}></ProjectPreview>
+          <ProjectPreview key={proj.title} title={proj.title} desc={proj.desc} link={proj.link}></ProjectPreview>
         </Reveal>
       )}
       <Reveal>
