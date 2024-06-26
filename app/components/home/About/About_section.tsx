@@ -17,7 +17,7 @@ export default function AboutSection({ children, title, text, left }: {children:
         <Reveal translate="translate-x-20">
           <div className="flex flex-col gap-2 text-left">
             <h3 className="font-playfairDisplay text-3xl">{title}</h3>
-            <p className="[&>a]:text-Cmain [&>a]:underline" dangerouslySetInnerHTML={{ __html: text }}/>
+            <p className="[&>a]:text-Cmain [&>a]:dark:text-Clightmain  [&>a]:dark:font-medium [&>a]:underline" dangerouslySetInnerHTML={{ __html: text }}/>
           </div>
         </Reveal>
       </div>
