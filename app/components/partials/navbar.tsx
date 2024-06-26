@@ -47,7 +47,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="container items-center flex mx-auto justify-center">
+        <nav className="container items-center flex mx-auto justify-center invisible  sm:visible">
             <div className={`flex justify-center fixed px-4 rounded-full nav-links font-bold text-lg bw-text bg-white  duration-500 ease-out ${isScrolled ? 'bg-opacity-75 mt-24 gap-4 py-2' : 'bg-opacity-0 mt-32 gap-8 py-3 '} drop-shadow-sm `}>
 
                 {sections.map(section => <Link href={section.href} key={section.id} className={`transition-all selected hover:text-Cmain ${activeSection === section.id ? 'bg-opacity-100' : 'bg-opacity-0'}`} >{section.name}</Link>)}

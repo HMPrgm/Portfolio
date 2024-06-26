@@ -72,7 +72,7 @@ export default function ProjectArchive() {
     return (
         <div>
             
-                <p className="bg-Cwhite pt-6 text-center text-lg">All my significant projects are listed here. The recommended ones are on the home page</p>
+                <p className="bg-Cwhite pt-6 text-center text-md sm:text-lg px-10">All my significant projects are listed here. The recommended ones are on the home page</p>
             
             {projects.map(p=><ProjectSection projectCategory={p}></ProjectSection>)}
         </div>

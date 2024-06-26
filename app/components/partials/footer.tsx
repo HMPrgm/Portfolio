@@ -1,8 +1,8 @@
 export default function footer() {
   return (
     <footer className="bw-text py-10">
-      <div className="grid grid-cols-2 text-center">
-        <div className="container mx-auto items-center md:w-96">
+      <div className="grid sm:grid-cols-2 text-center gap-4">
+        <div className="container mx-auto items-center md:w-96 px-4 lg:px-0">
           Designed in <b>Figma</b> and developed in <b>VS Code.</b> Built with <b>Next.js</b> and <b>Tailwind CSS</b>
         </div>
         <div className="flex flex-col">

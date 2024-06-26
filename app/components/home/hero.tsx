@@ -10,12 +10,12 @@ export default function Hero() {
 
   //TODO Remove Absolute
   return (
-    <section id="home" className="items-center text-center bw-text font-playfairDisplay flex flex-col gap-12 min-h-screen justify-center relative -z-20 overflow-x-clip">
+    <section id="home" className="items-center text-center bw-text font-playfairDisplay flex flex-col gap-12 pt-32 pb-10 sm:pb-0 sm:pt-0 sm:min-h-screen justify-center relative -z-20 overflow-x-clip">
       <Dots></Dots>
-      <h2 className="text-8xl font-bold">
+      <h2 className="text-5xl sm:text-8xl font-bold">
         Hi, I'm Henry
       </h2>
-      <h3 className="text-4xl min-h-10">A CS student at UVA
+      <h3 className="text-2xl sm:text-4xl min-h-10">A CS student at UVA
 
       </h3>
       <div></div>

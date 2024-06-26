@@ -9,10 +9,10 @@ export default function ProjectSection({ projectCategory }: { projectCategory: P
     return (
         <div className='bg-Cwhite'>
             {/* <Reveal> */}
-                <h2 className='text-5xl font-playfairDisplay text-center py-10'>{projectCategory.name}</h2>
+                <h2 className='text-3xl sm:text-5xl font-playfairDisplay text-center py-10'>{projectCategory.name}</h2>
             {/* </Reveal>
             <Reveal> */}
-            <div className='grid grid-cols-3'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3'>
                 {projectCategory.projects.map(p => 
                 
                     <ProjectPreview project={p}></ProjectPreview>
