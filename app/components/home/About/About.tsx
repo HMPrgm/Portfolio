@@ -32,7 +32,9 @@ export default function About() {
           <h2 className="font-playfairDisplay text-5xl pb-10">Who Am I?</h2>
         </Reveal>
 
-        {sections.map(s=> <About_section key={s.title} title={s.title} text={s.text} left={s.left} photos={s.photos}></About_section>)}
+        {sections.map(s=> <About_section key={s.title} title={s.title} text={s.text} left={s.left} photos={s.photos}>
+          <img src={s.photos[0]} alt={s.title} className="max-h-80 rounded-t-full bg-Cwhite " />
+        </About_section>)}
     </section>
   )
 }
