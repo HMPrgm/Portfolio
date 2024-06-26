@@ -9,7 +9,7 @@ export default function ProjectPreview({title, desc, link}:{title:string, desc:s
         <h3 className="text-3xl font-playfairDisplay">{title}</h3>
         <p>{desc}</p>
         <button className="border-solid border-2 border-Cwhite py-2 px-4 text-center max-w-40 hover:bg-Cwhite hover:text-Cblack transition duration-500 ease-out">
-          <Link href={link}>More Details</Link>
+          <Link href={link} target="_blank">More Details</Link>
         </button>
       </div>
     </div>
