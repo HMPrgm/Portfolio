@@ -15,7 +15,7 @@ export default function Hero() {
       <h2 className="text-5xl sm:text-8xl font-bold">
         Hi, I'm Henry
       </h2>
-      <h3 className="text-2xl sm:text-4xl min-h-10">A CS student at UVA
+      <h3 className="text-2xl sm:text-4xl min-h-10 max-w-[40vw]">A CS student, A Full-Stack Developer, and Much More...
 
       </h3>
       <div></div>

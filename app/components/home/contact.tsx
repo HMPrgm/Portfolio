@@ -26,15 +26,15 @@ export default function Contact() {
                     </Reveal>
                 </div>
                 <div className="mb-10 mt-6 max-w-[60em] container items-center mx-auto">
-                    <form className={`xl:pt-20 grid grid-cols-2 gap-6 [&>*]:flex [&>*]:flex-col text-left text-xl ${messageSent? 'hidden':'visible'}`}>
-                        <Reveal className="">
+                    <form className={`xl:pt-20 grid grid-cols-2 gap-6 [&>*]:flex [&>*]:flex-col text-left text-xl mx-4 md:mx-0 ${messageSent? 'hidden':'visible'}`}>
+                        <Reveal className="col-span-2 md:col-span-1">
                             <label htmlFor="name" className="">Name</label>
                             <input type="name" name="name" id="name"
                                 className="outline-none focus:text-[1.3rem] transition-all duration-500 ease-out bg-Cwhite border-b-Cblack border-b-2 py-1 peer"
                                 placeholder="Enter your name"
                                 onChange={(e) => setName(e.target.value)}></input>
                         </Reveal>
-                        <Reveal>
+                        <Reveal className="col-span-2 md:col-span-1">
                             <label htmlFor="email" >Email</label>
                             <input type="email" name="email" id="email" placeholder="Enter your email address"
                                 className=" transition-all duration-500 ease-out outline-none bg-Cwhite border-b-Cblack border-b-2 py-1 focus:text-[1.3rem]"
