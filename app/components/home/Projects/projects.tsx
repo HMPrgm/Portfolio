@@ -2,43 +2,31 @@ import React from 'react'
 import ProjectPreview from './project_preview'
 import Reveal from '../../partials/effects/revealonscroll'
 import Link from 'next/link';
-import { Project } from './project'
+import {Project} from './project'
 
-interface VisualProject {
-  project: Project;
-  photo: string;
-}
+
 
 export default function Projects() {
 
   const linkToProjectPage: string = '/projects'
-  const finishedProjects: VisualProject[] = [
+  const finishedProjects: Project[] = [
     {
-      project: {
-        title: "HooBets",
-        desc: "An online betting app built for HooHacks 2024",
-        link: "/projects/groceries-online",
-      },
-      photo: ''
+      title: "HooBets",
+      desc: "An online betting app built for HooHacks 2024",
+      link: "https://github.com/HMPrgm/Hoobets",
     },
     {
-      project: {
-        title: "Note App",
-        desc: "A note taking app build using .NET WPF",
-        link: "/projects/groceries-online",
-      },
-      photo: ''
+      title: "Note App",
+      desc: "A note taking app build using .NET WPF",
+      link: "https://github.com/HMPrgm/NoteApp",
     }
   ]
 
-  const currentProjects: VisualProject[] = [
+  const currentProjects: Project[] = [
     {
-      project: {
-        title: "Groceries Online",
-        desc: "An online store that simulaties a grocery store",
-        link: "/projects/groceries-online",
-      },
-      photo:''
+      title: "Groceries Online",
+      desc: "An online store that simulaties a grocery store",
+      link: "https://github.com/HMPrgm/grocery-store-angular",
     }
   ]
   return (
@@ -48,9 +36,7 @@ export default function Projects() {
       </Reveal>
       {finishedProjects.map(proj =>
         <Reveal>
-          <ProjectPreview key={proj.project.title} project={proj.project}>
-            <img src={proj.photo} alt={proj.project.title}/>
-          </ProjectPreview>
+          <ProjectPreview key={proj.title} project={proj}></ProjectPreview>
         </Reveal>
       )}
       <Reveal>
@@ -58,9 +44,7 @@ export default function Projects() {
       </Reveal>
       {currentProjects.map(proj =>
         <Reveal>
-          <ProjectPreview key={proj.project.title} project={proj.project}>
-            <img src={proj.photo} alt={proj.project.title}/>
-          </ProjectPreview>
+          <ProjectPreview key={proj.title} project={proj}></ProjectPreview>
         </Reveal>
       )}
       <Reveal>

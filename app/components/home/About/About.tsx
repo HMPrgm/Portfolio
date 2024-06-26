@@ -97,8 +97,8 @@ export default function About() {
     },
     design: {
       title: "I'm an Audio and Video Editor",
-      text: "I'm currently editing for two Podcasts: <a href='https://open.spotify.com/show/0OtkSXW04TEbGX3lwUEQcH?si=d884835e44414dd6' target='_blank'>The Hidden Curriculum</a> and <a href='https://open.spotify.com/show/4ZiJcyjqtUC9G09zIqdcVY?si=6346d934a38d4073 target='_blank'>Coup de'Pod</a>. I've been using professional video editing software since 2020. I'm at an intermediate level with Premire Pro and Davinci Resolve, and am a beginner in After Effects. I have skills with design software, being at an intermediate level with Photoshop and Illustrator and at a beginner level with Figma.",
-      left: false,
+      text: "I'm currently editing for two podcasts: <a href='https://open.spotify.com/show/0OtkSXW04TEbGX3lwUEQcH?si=d884835e44414dd6' target='_blank'>The Hidden Curriculum</a> and <a href='https://open.spotify.com/show/4ZiJcyjqtUC9G09zIqdcVY?si=6346d934a38d4073 target='_blank'>Coup de'Pod</a>. I've been using professional video editing software since 2020. I'm at an intermediate level with Premire Pro and Davinci Resolve, and am a beginner in After Effects. I have skills with design software, being at an intermediate level with Photoshop and Illustrator and at a beginner level with Figma.",
+      left: true,
       techs:
         [
           {
