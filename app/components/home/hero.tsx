@@ -8,7 +8,6 @@ export default function Hero() {
     nums.push(i);
   }
 
-  //TODO Remove Absolute
   return (
     <section id="home" className="items-center text-center bw-text font-playfairDisplay flex flex-col gap-12 pt-32 pb-10 sm:pb-0 sm:pt-0 sm:min-h-screen justify-center relative -z-20 overflow-x-clip">
       <Dots></Dots>

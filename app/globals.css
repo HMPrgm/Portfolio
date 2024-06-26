@@ -22,7 +22,7 @@
 @layer navbar{
 
     .selected{
-        @apply bg-Cwhite rounded-full drop-shadow-none
+        @apply bg-Cwhite dark:bg-Cblack rounded-full drop-shadow-none
     }
     .nav-links>*{
         @apply px-5 py-1
@@ -33,6 +33,6 @@
 }
 @layer projects {
     .project-title{
-        @apply font-playfairDisplay py-10 text-Cdarkmain
+        @apply font-playfairDisplay py-10 text-Cdarkmain dark:text-Clightmain
     }
 }

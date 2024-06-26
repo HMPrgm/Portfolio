@@ -15,42 +15,42 @@ export default function Contact() {
 
 
     return (
-        <div id="contact" className="bg-Cwhite py-20 xl:pb-40 text-Cblack">
+        <div id="contact" className="bw-extreme-text py-20 xl:pb-40 ">
             <div className="container mx-auto items-center text-center ">
                 <div className="container items-center mx-auto max-w-96 gap-12 [&>*]:py-4">
                     <Reveal>
-                        <h2 className="font-playfairDisplay text-5xl text-Cblack">Let's Talk!</h2>
+                        <h2 className="font-playfairDisplay text-5xl ">Let's Talk!</h2>
                     </Reveal>
                     <Reveal>
                         <p className="text-xl">Have a question or just want to talk? Feel free to shoot me a message!</p>
                     </Reveal>
                 </div>
-                <div className="mb-10 mt-6 max-w-[60em] container items-center mx-auto">
+                <div className="mb-10 mt-2 max-w-[60em] container items-center mx-auto">
                     <form className={`xl:pt-20 grid grid-cols-2 gap-6 [&>*]:flex [&>*]:flex-col text-left text-xl mx-4 md:mx-0 ${messageSent? 'hidden':'visible'}`}>
                         <Reveal className="col-span-2 md:col-span-1">
                             <label htmlFor="name" className="">Name</label>
                             <input type="name" name="name" id="name"
-                                className="outline-none focus:text-[1.3rem] transition-all duration-500 ease-out bg-Cwhite border-b-Cblack border-b-2 py-1 peer"
+                                className="outline-none focus:text-[1.3rem] transition-all duration-500 ease-out bw-extreme-text dark:border-b-Cwhite border-b-Cblack border-b-2 py-1 peer"
                                 placeholder="Enter your name"
                                 onChange={(e) => setName(e.target.value)}></input>
                         </Reveal>
                         <Reveal className="col-span-2 md:col-span-1">
                             <label htmlFor="email" >Email</label>
                             <input type="email" name="email" id="email" placeholder="Enter your email address"
-                                className=" transition-all duration-500 ease-out outline-none bg-Cwhite border-b-Cblack border-b-2 py-1 focus:text-[1.3rem]"
+                                className=" transition-all duration-500 ease-out outline-none bw-extreme-text dark:border-b-Cwhite border-b-Cblack border-b-2 py-1 focus:text-[1.3rem]"
                                 onChange={(e) => setEmail(e.target.value)}></input>
                         </Reveal>
                         <Reveal className="col-span-2">
                             <label htmlFor="message" className="">Message</label>
-                            <textarea name="message" id="message" className="transition-all duration-500 ease-out outline-none h-18 overflow-auto resize-none bg-Cwhite border-b-Cblack border-b-2 py-1.5 focus:text-[1.275rem]" placeholder="Hi Henry, I was just curious about your X project and was wondering if you could tell me more about how you implemented..."
+                            <textarea name="message" id="message" className="transition-all duration-500 ease-out outline-none h-18 overflow-auto resize-none bw-extreme-text dark:border-b-Cwhite border-b-Cblack border-b-2 py-1.5 focus:text-[1.275rem]" placeholder="Hi Henry, I was just curious about your X project and was wondering if you could tell me more about how you implemented..."
                                 onChange={(e) => setMessage(e.target.value)}></textarea>
                         </Reveal>
                         <Reveal className="col-span-2 items-center">
-                            <button type="button" onClick={handleSubmit}  className="border-2 border-Cblack w-44 text-center py-2 hover:text-Cwhite hover:bg-Cblack transition-all duration-500 hover:cursor-pointer">Send Message</button>
+                            <button type="button" onClick={handleSubmit}  className="border-2 border-Cblack dark:border-Cwhite w-44 text-center py-2 hover:text-Cwhite hover:bg-Cblack dark:hover:text-Cblack dark:hover:bg-Cwhite transition-all duration-500 hover:cursor-pointer">Send Message</button>
                         </Reveal>
                     </form>
                     <div className={` col-span-2 transition duration-1000 ${messageSent ? 'opacity-100' : 'opacity-0'}`}>
-                        <p className="text-center text-xl text-Cmain">Message Sent!</p>
+                        <p className="text-center text-xl text-Cmain dark:text-Clightmain">Message Sent!</p>
                     </div>
                 </div>
             </div>

@@ -64,7 +64,7 @@ export default function Dots() {
   }, [resize])
   return (
     <div className="absolute -z-10">
-      <canvas ref={canvasRef} width={800} height={600} className="border border-gray-300"></canvas>
+      <canvas ref={canvasRef} width={800} height={600} className=""></canvas>
     </div>
   );
 }
