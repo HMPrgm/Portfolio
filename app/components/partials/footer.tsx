@@ -7,9 +7,9 @@ export default function footer() {
         </div>
         <div className="flex flex-col">
           <div className="flex justify-center gap-4">
-            <div><a href="https://github.com/HMPrgm" target="_blank">Github</a></div>
-            <div><a href="https://www.linkedin.com/in/henry-morris-b87361274/" target="_blank">Linkedin</a></div>
-            <div><a href="mailto:henrymprof@gmail.com" target="_blank">Email</a></div>
+            <div><a href="https://github.com/HMPrgm" target="_blank" className="hover:text-Cmain hover:text-[1.1rem] transition-all duration-300">Github</a></div>
+            <div><a href="https://www.linkedin.com/in/henry-morris-b87361274/" target="_blank" className="hover:text-Cmain hover:text-[1.1rem] transition-all duration-300">Linkedin</a></div>
+            <div><a href="mailto:henrymprof@gmail.com" target="_blank" className="hover:text-Cmain hover:text-[1.1rem] transition-all duration-300">Email</a></div>
           </div>
           <div className="text-xs">Henry Morris ©2024</div>
         </div>

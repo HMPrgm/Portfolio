@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${playfair_display.variable} ${josefin_Sans.variable} font-josefinSans`}>
-        <Navbar />
+        
         {children}
         <Footer/>
       </body>

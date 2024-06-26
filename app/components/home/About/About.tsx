@@ -64,7 +64,7 @@ export default function About() {
             ]
         },
         other:{
-          title:"I Have a Passion for Everything CS",
+          title:"Additional Techs I've Used",
           text:"I've used a lot of different technologies throughout my CS career. I started in 2019 making games with Unity and C#, afterwards learning Python and Java. I've learned a lot of .NET and have recently been delving into Deep Learning. Of course this list is incomplete as my drive to learn only increases.",
           left:false,
           techs:

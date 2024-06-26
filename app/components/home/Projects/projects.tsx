@@ -2,17 +2,12 @@ import React from 'react'
 import ProjectPreview from './project_preview'
 import Reveal from '../../partials/effects/revealonscroll'
 import Link from 'next/link';
+import {Project} from './project'
 
-interface Project {
-
-  title: string;
-  desc: string;
-  link: string;
-}
 
 export default function Projects() {
 
-  const linkToProjectPage: string = ''
+  const linkToProjectPage: string = '/projects'
   const finishedProjects: Project[] = [
     {
       title: "HooBets",
