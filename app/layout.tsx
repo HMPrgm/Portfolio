@@ -19,7 +19,7 @@ const playfair_display = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Henry Morris - Portfolio",
-  description: "Projects and Experience in Computer Science and More",
+  description: "UVA CS student and fullstack developer",
 };
 
 export default function RootLayout({
