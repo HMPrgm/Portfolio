@@ -4,12 +4,10 @@ import React, { useEffect, useRef, useState } from 'react';
 interface RevealProps {
   children: React.ReactNode;
   className?: string;
-  duration?:number;
   translate?:string;
-  delay?:number;
 }
 
-const Reveal: React.FC<RevealProps> = ({ children, className = '', duration=1000,translate='translate-y-10', delay=0}) => {
+const Reveal: React.FC<RevealProps> = ({ children, className = '',translate='translate-y-10'}) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -38,7 +36,7 @@ const Reveal: React.FC<RevealProps> = ({ children, className = '', duration=1000
   return (
     <div
       ref={ref}
-      className={`transition-all duration-[${duration}ms] delay-[${delay}ms] ${isVisible ? 'opacity-100' : `opacity-0 ${translate}`} ${className}`}
+      className={`transition-all duration-1000 ${isVisible ? 'opacity-100' : `opacity-0 ${translate}`} ${className}`}
     >
       {children}
     </div>
