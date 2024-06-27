@@ -32,7 +32,7 @@ export default function Contact() {
             <div className="container mx-auto items-center text-center ">
                 <div className="container items-center mx-auto max-w-96 gap-12 [&>*]:py-4">
                     <Reveal>
-                        <h2 className="font-playfairDisplay text-5xl ">Let's Talk!</h2>
+                        <h2 className="font-playfairDisplay text-5xl ">How Can I Help You?</h2>
                     </Reveal>
                     <Reveal>
                         <p className="text-xl">Have a question or just want to talk? Feel free to shoot me a message!</p>
