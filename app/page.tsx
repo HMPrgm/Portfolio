@@ -7,7 +7,7 @@ import Navbar from './components/partials/navbar';
 
 export default function Home() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <Navbar />
       <Hero></Hero>
       <Projects></Projects>
