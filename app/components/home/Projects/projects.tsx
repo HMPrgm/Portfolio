@@ -16,17 +16,17 @@ export default function Projects() {
       link: "https://github.com/HMPrgm/Hoobets",
     },
     {
-      title: "Note App",
-      desc: "A note taking app build using .NET WPF",
-      link: "https://github.com/HMPrgm/NoteApp",
+      title: "Groceries Online",
+      desc: "An online store that simulaties a grocery store",
+      link: "https://github.com/HMPrgm/grocery-store-angular",
     }
   ]
 
   const currentProjects: Project[] = [
     {
-      title: "Groceries Online",
-      desc: "An online store that simulaties a grocery store",
-      link: "https://github.com/HMPrgm/grocery-store-angular",
+      title: "Life Tracker",
+      desc: "A Todo-List, Calendar, and Habit Tracker in one!",
+      link: "https://github.com/HMPrgm/life-tracker",
     }
   ]
   return (
