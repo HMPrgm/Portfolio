@@ -15,6 +15,11 @@ export default function ProjectArchive() {
             name: "Web Dev",
             projects: [
                 {
+                    title: "Life Tracker",
+                    desc: "A Todo-List, Calendar, and Habit Tracker in one!",
+                    link: "https://github.com/HMPrgm/life-tracker",
+                },
+                {
                     title: "HooBets",
                     desc: "An online betting app built for HooHacks 2024 that uses React and Flask",
                     link: "https://github.com/HMPrgm/Hoobets",
