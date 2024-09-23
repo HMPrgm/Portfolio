@@ -1,15 +1,13 @@
-"use client"
 import { useRef, useState } from "react"
 import Reveal from "../partials/effects/revealonscroll";
-import emailjs from 'emailjs-com'
 import Link from "next/link";
 
 export default function ContactNoForm() {
 
 
     return (
-        <div id="contact" className="bw-extreme-text py-20 xl:pb-40 ">
-            <div className="container mx-auto items-center text-center ">
+        <section id="contact" className="bw-extreme-text py-20 xl:pb-40 ">
+            <div  className="container mx-auto items-center text-center ">
                 <div className="container items-center mx-auto max-w-96 gap-12 [&>*]:py-4">
                     <Reveal>
                         <h2 className="font-playfairDisplay text-5xl ">Let Me Know How I Can Help!</h2>
@@ -22,6 +20,6 @@ export default function ContactNoForm() {
                     </Reveal>  
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
