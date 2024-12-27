@@ -2,7 +2,7 @@ import { DotObj } from "./dotObj";
 import { MousePos } from "./dotObj";
 
 const minDistance = 300;
-const magnitude =  3/2;
+const magnitude =  4/2;
 const clamp = (x:number,max:number,min:number) => Math.max( min, Math.min(x, max) );
 export function NewDot(width:number,height:number,context:CanvasRenderingContext2D , dotObj:DotObj,mousePos:MousePos) {
     let dot = new Dot(dotObj); 
