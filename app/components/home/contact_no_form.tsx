@@ -16,7 +16,7 @@ export default function ContactNoForm() {
                         <p className="text-xl">Have a question or just want to talk? Feel free to shoot me a message!</p>
                     </Reveal>              
                     <Reveal className="text-xl">
-                        Email: <Link href="mailto:henrymprof@gmail.com" target="_blank" className="text-Cmain dark:text-blue-100 underline hover:text-[1.3rem] transition-all duration-300">henrymprof@gmail.com</Link>    
+                        Email: <Link href="mailto:henrymprof@gmail.com" target="_blank" className="text-Cmain dark:text-blue-100 underline hover:text-[1.3rem] transition-all duration-300">yfm3bn@virginia.edu</Link>    
                     </Reveal>  
                 </div>
             </div>
