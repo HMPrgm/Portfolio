@@ -11,22 +11,22 @@ export default function Projects() {
   const linkToProjectPage: string = '/projects'
   const finishedProjects: Project[] = [
     {
+      title: "AI Loan Officer",
+      desc: "Simply upload a bank statement, and get loan predictions.",
+      link: "https://github.com/HMPrgm/ai-lender",
+    },
+    {
       title: "HooBets",
       desc: "An online betting app built for HooHacks 2024",
       link: "https://github.com/HMPrgm/Hoobets",
     },
-    {
-      title: "Groceries Online",
-      desc: "An online store that simulaties a grocery store",
-      link: "https://github.com/HMPrgm/grocery-store-angular",
-    }
   ]
 
   const currentProjects: Project[] = [
     {
-      title: "Life Tracker",
-      desc: "A Todo-List, Calendar, and Habit Tracker in one!",
-      link: "https://github.com/HMPrgm/life-tracker",
+      title: "Hoolang",
+      desc: "2 person project to create compiler and programming language!",
+      link: "",
     }
   ]
   return (
