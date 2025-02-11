@@ -15,11 +15,6 @@ export default function ProjectArchive() {
             name: "Web Dev",
             projects: [
                 {
-                    title: "Life Tracker",
-                    desc: "A Todo-List, Calendar, and Habit Tracker in one!",
-                    link: "https://github.com/HMPrgm/life-tracker",
-                },
-                {
                     title: "HooBets",
                     desc: "An online betting app built for HooHacks 2024 that uses React and Flask",
                     link: "https://github.com/HMPrgm/Hoobets",
@@ -43,32 +38,42 @@ export default function ProjectArchive() {
             ]
         },
         {
+            name: "AI/ML",
+            projects: [
+                {
+                    title: "AI Loan Officer",
+                    desc: "Simply upload a bank statement, and get loan predictions.",
+                    link: "https://github.com/HMPrgm/ai-lender",
+                }
+            ]
+        },
+        {
             name: "Games",
-            projects:[
+            projects: [
                 {
                     title: "Don't Pick a Side",
-                    desc:"a fast-paced game made for GeoJam 2022",
-                    link:"https://hmprgm.itch.io/dont-pick-a-side"
+                    desc: "a fast-paced game made for GeoJam 2022",
+                    link: "https://hmprgm.itch.io/dont-pick-a-side"
                 },
                 {
                     title: "Cold War Diplomacy in Europe",
-                    desc:"A cold war strategy map game made for the Historically Accurate Game Jam",
-                    link:"https://hmprgm.itch.io/cold-war-diplomacy-in-europe"
+                    desc: "A cold war strategy map game made for the Historically Accurate Game Jam",
+                    link: "https://hmprgm.itch.io/cold-war-diplomacy-in-europe"
                 },
                 {
                     title: "Tropical Getaway",
-                    desc:"A tropical themed platformer made for Mini Jam 93",
-                    link:"https://hmprgm.itch.io/tropical-getaway"
+                    desc: "A tropical themed platformer made for Mini Jam 93",
+                    link: "https://hmprgm.itch.io/tropical-getaway"
                 },
             ]
         },
         {
             name: "Other",
-            projects:[
+            projects: [
                 {
                     title: "Note App",
-                    desc:"A simple notetaking app built using .NET WPF",
-                    link:"https://github.com/HMPrgm/NoteApp"
+                    desc: "A simple notetaking app built using .NET WPF",
+                    link: "https://github.com/HMPrgm/NoteApp"
                 }
             ]
         }
@@ -76,10 +81,10 @@ export default function ProjectArchive() {
 
     return (
         <div>
-            
-                <p className="bg-Cwhite pt-6 text-center text-md sm:text-lg px-10">All my significant projects are listed here. The recommended ones are on the home page</p>
-            
-            {projects.map(p=><ProjectSection projectCategory={p}></ProjectSection>)}
+
+            <p className="bg-Cwhite pt-6 text-center text-md sm:text-lg px-10">All my significant projects are listed here. The recommended ones are on the home page</p>
+
+            {projects.map(p => <ProjectSection projectCategory={p}></ProjectSection>)}
         </div>
     )
 }
