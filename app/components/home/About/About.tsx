@@ -7,7 +7,7 @@ export default function About() {
   const sections: any = {
     personal: {
       title: "I'm studying Computer Science at the University of Virginia",
-      text: "I'm studying CS through UVA Engineering along with a Math major. Aside from those, my other interests include: history, language learning (German currently), reading, and exercising!",
+      text: "I'm studying CS through UVA Engineering along with a Math major. I've been a TA for the Discrete Mathematics course at UVA for 2 semesters now, and love the experience. Teaching is incredibly enjoyable, and it's nice knowing the work I'm doing is helping others improve their grades.",
       left: false,
       photo: 'Photo_Cropped.png'
     },
@@ -30,16 +30,8 @@ export default function About() {
             photo: './technology_photos/Nextjs.png'
           },
           {
-            name: 'HTML CSS',
-            photo: './technology_photos/Htmlcss.png'
-          },
-          {
             name: 'Tailwind',
             photo: './technology_photos/Tailwind.png'
-          },
-          {
-            name: 'Javascript',
-            photo: './technology_photos/Javascript.png'
           },
           {
             name: 'Typescript',
@@ -58,8 +50,12 @@ export default function About() {
             photo: './technology_photos/Mongodb.png'
           },
           {
-            name: 'Git',
-            photo: './technology_photos/Git.png'
+            name: 'PostgreSQL',
+            photo: './technology_photos/Postgres.png'
+          },
+          {
+            name: 'Go',
+            photo: './technology_photos/Go.png'
           },
         ]
     },
@@ -86,6 +82,10 @@ export default function About() {
             photo: './technology_photos/Java.png'
           },
           {
+            name: 'C',
+            photo: './technology_photos/C.png'
+          },
+          {
             name: 'Python',
             photo: './technology_photos/Python.png'
           },
@@ -93,6 +93,11 @@ export default function About() {
             name: 'PyTorch',
             photo: './technology_photos/Pytorch.png'
           },
+          {
+            name: 'Git',
+            photo: './technology_photos/Git.png'
+          },
+
         ]
     },
     design: {
@@ -126,7 +131,27 @@ export default function About() {
             photo: './technology_photos/Figma.png'
           },
         ]
-    }
+    },
+    activities: {
+      title: "I Love learning Languages",
+      text: "My goal is to learn Spanish, German, and Italian by the time I'm 23. Not necessarily fluently, but enough to have a casual conversation with a native speaker. I started out by first using Duolingo for a while, before moving on to more complicated systems. I recently read <i>Fluent Forever</i> by Gabriel Wyner, which helped me unlock some secrets that should help on my journey.",
+      left: false,
+      techs:
+        [
+          {
+            name: 'Spanish',
+            photo: './technology_photos/Spain.png'
+          },
+          {
+            name: 'German',
+            photo: './technology_photos/Germany.png'
+          },
+          {
+            name: 'Italian',
+            photo: './technology_photos/Italian.png'
+          },
+        ]
+    },
   }
 
   return (
@@ -171,7 +196,15 @@ export default function About() {
 
         <TechStacks techs={sections.design.techs}></TechStacks>
       </AboutSection>
+      {/* Activities Section */}
+      <AboutSection
+        key={sections.activities.title}
+        title={sections.activities.title}
+        text={sections.activities.text}
+        left={sections.activities.left}>
 
+        <TechStacks techs={sections.activities.techs}></TechStacks>
+      </AboutSection>
     </section>
   )
 }
